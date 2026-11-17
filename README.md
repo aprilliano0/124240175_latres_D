@@ -110,31 +110,3 @@ latres/
 ├── pubspec.yaml               # Deklarasi library/dependencies dan konfigurasi metadata project
 └── README.md                  # Dokumentasi penjelasan proyek dan struktur folder
 ```
-
----
-
-## Panduan Menjalankan Aplikasi
-
-1. **Clone repository:**
-   ```bash
-   git clone <URL_REPO_GITHUB>
-   cd <NAMA_REPO>
-   ```
-
-2. **Install seluruh dependensi:**
-   ```bash
-   flutter pub get
-   ```
-
-3. **Jalankan aplikasi:**
-   ```bash
-   flutter run
-   ```
-
----
-
-## Kredensial Login
-
-- **Username**: Bebas diinputkan pengguna (Contoh: `aprilliano`, `yusuf`, dsb.)
-- **Password**: **Wajib NIM: `124240175`**
-- *Catatan: Nilai password NIM dikonfigurasi di file `lib/constants/app_constants.dart`.*
