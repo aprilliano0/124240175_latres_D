@@ -89,51 +89,39 @@ class ProfilePage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    children: [
-                      Icon(Icons.format_quote, color: Colors.blue.shade700),
-                      const SizedBox(width: 8),
-                      const Text(
-                        'Kesan:',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black87,
-                        ),
-                      ),
-                    ],
+                  const Text(
+                    'Kesan:',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black87,
+                    ),
                   ),
                   const SizedBox(height: 6),
-                  Text(
-                    'Belajar Flutter dengan GetX dan Hive ternyata sangat menyenangkan dan kodenya rapi! State management GetX membuat kode lebih reaktif dan efisien, sedangkan Hive sangat cepat untuk local database.',
+                  const Text(
+                    'Sangat seru',
                     style: TextStyle(
-                      fontSize: 13,
-                      height: 1.5,
-                      color: Colors.grey.shade700,
+                      fontSize: 14,
+                      height: 1.4,
+                      color: Colors.black87,
                     ),
                   ),
                   const Divider(height: 24),
-                  Row(
-                    children: [
-                      Icon(Icons.lightbulb_outline, color: Colors.amber.shade700),
-                      const SizedBox(width: 8),
-                      const Text(
-                        'Pesan:',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black87,
-                        ),
-                      ),
-                    ],
+                  const Text(
+                    'Pesan:',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black87,
+                    ),
                   ),
                   const SizedBox(height: 6),
-                  Text(
-                    'Terus semangat belajar ngoding. Error adalah guru terbaik kita. Jangan takut mencoba arsitektur baru dan eksplorasi fitur-fitur Flutter lebih dalam!',
+                  const Text(
+                    'Siap otwe responsi',
                     style: TextStyle(
-                      fontSize: 13,
-                      height: 1.5,
-                      color: Colors.grey.shade700,
+                      fontSize: 14,
+                      height: 1.4,
+                      color: Colors.black87,
                     ),
                   ),
                 ],
