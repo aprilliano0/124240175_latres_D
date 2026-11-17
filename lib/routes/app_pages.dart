@@ -35,7 +35,7 @@ class AppPages {
     ),
     GetPage(
       name: AppRoutes.cart,
-      page: () => CartPage(),
+      page: () => const CartPage(),
     ),
   ];
 }

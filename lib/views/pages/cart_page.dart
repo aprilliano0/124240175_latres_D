@@ -4,17 +4,27 @@ import '../../controllers/auth_controller.dart';
 import '../../controllers/cart_controller.dart';
 import '../widgets/cart_item_tile.dart';
 
-class CartPage extends StatelessWidget {
-  CartPage({super.key});
+class CartPage extends StatefulWidget {
+  const CartPage({super.key});
 
+  @override
+  State<CartPage> createState() => _CartPageState();
+}
+
+class _CartPageState extends State<CartPage> {
   final CartController cartController = Get.find<CartController>();
   final AuthController authController = Get.find<AuthController>();
 
   @override
-  Widget build(BuildContext context) {
-    // Pastikan cart dimuat ulang untuk user yang sedang aktif
-    cartController.loadUserCart(authController.username.value);
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      cartController.loadUserCart(authController.username.value);
+    });
+  }
 
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey.shade100,
       appBar: AppBar(
@@ -116,13 +126,13 @@ class CartPage extends StatelessWidget {
             // Bottom Summary & Checkout Bar
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 boxShadow: [
                   BoxShadow(
-                    color: const Color.fromRGBO(0, 0, 0, 0.06),
+                    color: Color.fromRGBO(0, 0, 0, 0.06),
                     blurRadius: 10,
-                    offset: const Offset(0, -4),
+                    offset: Offset(0, -4),
                   ),
                 ],
               ),
