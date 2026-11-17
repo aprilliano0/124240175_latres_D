@@ -64,7 +64,6 @@ class LoginPage extends StatelessWidget {
                   decoration: InputDecoration(
                     prefixIcon: const Icon(Icons.person_outline),
                     labelText: 'Username',
-                    hintText: 'Contoh: nino',
                     filled: true,
                     fillColor: Colors.grey.shade50,
                     border: OutlineInputBorder(
@@ -92,7 +91,6 @@ class LoginPage extends StatelessWidget {
                     decoration: InputDecoration(
                       prefixIcon: const Icon(Icons.lock_outline),
                       labelText: 'Password (Wajib NIM)',
-                      hintText: 'Contoh: ${AppConstants.defaultNim}',
                       suffixIcon: IconButton(
                         icon: Icon(
                           authController.isPasswordVisible.value
