@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../constants/app_constants.dart';
 import '../models/cart_item.dart';
 import '../models/product.dart';
 import '../services/database_service.dart';
@@ -111,7 +112,7 @@ class CartController extends GetxController {
 
     Get.snackbar(
       'Checkout Berhasil',
-      'Terima kasih telah berbelanja di Toko Awikwok!',
+      'Terima kasih telah berbelanja di ${AppConstants.appName}!',
       snackPosition: SnackPosition.BOTTOM,
       backgroundColor: Colors.green.shade700,
       colorText: Colors.white,

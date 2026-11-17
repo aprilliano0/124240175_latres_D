@@ -3,7 +3,7 @@
 **NIM**: `124240175`  
 **Kelas**: SI-D
 
-Aplikasi toko online berbasis Flutter (**Toko Awikwok**) yang mengintegrasikan REST API eksternal (DummyJSON), manajemen state reaktif menggunakan GetX, penyimpanan sesi login menggunakan SharedPreferences, serta penyimpanan keranjang belanja lokal persisten per pengguna menggunakan database NoSQL Hive.
+Aplikasi toko online berbasis Flutter (**Toko Seturan**) yang mengintegrasikan REST API eksternal (DummyJSON), manajemen state reaktif menggunakan GetX, penyimpanan sesi login menggunakan SharedPreferences, serta penyimpanan keranjang belanja lokal persisten per pengguna menggunakan database NoSQL Hive.
 
 ---
 

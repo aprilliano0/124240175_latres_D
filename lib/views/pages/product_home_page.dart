@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../constants/app_constants.dart';
 import '../../controllers/auth_controller.dart';
 import '../../controllers/cart_controller.dart';
 import '../../controllers/product_controller.dart';
@@ -33,7 +34,7 @@ class ProductHomePage extends StatelessWidget {
                 ),
               ),
               const Text(
-                'Selamat datang di Toko Awikwok',
+                'Selamat datang di ${AppConstants.appName}',
                 style: TextStyle(
                   fontSize: 11,
                   color: Colors.white70,

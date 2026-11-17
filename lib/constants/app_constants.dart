@@ -1,5 +1,5 @@
 class AppConstants {
-  static const String appName = 'Toko Awikwok';
+  static const String appName = 'Toko Seturan';
   static const String apiProductsUrl = 'https://dummyjson.com/products';
   static const String cartBoxName = 'cart_box';
   
