@@ -7,7 +7,7 @@ Aplikasi toko online berbasis Flutter (**Toko Seturan**) yang mengintegrasikan R
 
 ---
 
-## 📋 Fitur Aplikasi & Pemenuhan Ketentuan Soal
+## Fitur Aplikasi & Pemenuhan Ketentuan Soal
 
 1. **Autentikasi & Validasi NIM (Poin 4b)**
    - Form Login dengan input Username (bebas) dan Password (**wajib berupa NIM: `124240175`**).
@@ -45,7 +45,7 @@ Aplikasi toko online berbasis Flutter (**Toko Seturan**) yang mengintegrasikan R
 
 ---
 
-## 🛠️ Library / Dependencies yang Digunakan (Poin 5)
+## Library / Dependencies yang Digunakan (Poin 5)
 
 | Library | Versi | Kegunaan |
 | :--- | :--- | :--- |
@@ -57,7 +57,7 @@ Aplikasi toko online berbasis Flutter (**Toko Seturan**) yang mengintegrasikan R
 
 ---
 
-## 📁 Penjelasan Struktur Folder (Poin 3 - 10 Poin)
+## Penjelasan Struktur Folder (Poin 3 - 10 Poin)
 
 Proyek ini dibangun menggunakan arsitektur modular yang rapi (Clean MVC / Service-Repository pattern) agar mudah dipelihara dan dipahami:
 
@@ -66,7 +66,7 @@ latres/
 ├── android/                   # Konfigurasi native Android (Gradle, Manifest, build files)
 ├── ios/                       # Konfigurasi native iOS (Runner, Info.plist)
 ├── web/, windows/, linux/     # Konfigurasi platform pendukung lainnya
-├── assets/                    # (Opsional) Direktori untuk asset gambar atau font
+├── assets/                    # Direktori untuk asset gambar atau font
 ├── test/
 │   └── widget_test.dart       # Pengujian unit/widget Flutter
 │
@@ -113,7 +113,7 @@ latres/
 
 ---
 
-## 🚀 Panduan Menjalankan Aplikasi
+## Panduan Menjalankan Aplikasi
 
 1. **Clone repository:**
    ```bash
@@ -133,7 +133,7 @@ latres/
 
 ---
 
-## 🔑 Kredensial Login
+## Kredensial Login
 
 - **Username**: Bebas diinputkan pengguna (Contoh: `aprilliano`, `yusuf`, dsb.)
 - **Password**: **Wajib NIM: `124240175`**
