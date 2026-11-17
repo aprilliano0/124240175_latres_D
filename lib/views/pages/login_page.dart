@@ -7,7 +7,8 @@ class LoginPage extends StatelessWidget {
   LoginPage({super.key});
 
   final AuthController authController = Get.find<AuthController>();
-  final TextEditingController usernameController = TextEditingController();
+  final TextEditingController usernameController =
+      TextEditingController(text: 'nino');
   final TextEditingController passwordController = TextEditingController();
 
   @override
@@ -63,7 +64,7 @@ class LoginPage extends StatelessWidget {
                   decoration: InputDecoration(
                     prefixIcon: const Icon(Icons.person_outline),
                     labelText: 'Username',
-                    hintText: 'Masukkan nama pengguna bebas',
+                    hintText: 'Contoh: nino',
                     filled: true,
                     fillColor: Colors.grey.shade50,
                     border: OutlineInputBorder(
@@ -116,32 +117,6 @@ class LoginPage extends StatelessWidget {
                             BorderSide(color: Colors.blue.shade600, width: 2),
                       ),
                     ),
-                  ),
-                ),
-                const SizedBox(height: 10),
-
-                // Password hint info banner
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                  decoration: BoxDecoration(
-                    color: Colors.blue.shade50,
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(color: Colors.blue.shade100),
-                  ),
-                  child: Row(
-                    children: [
-                      Icon(Icons.info_outline, size: 16, color: Colors.blue.shade700),
-                      const SizedBox(width: 8),
-                      Expanded(
-                        child: Text(
-                          'Sesuai ketentuan, password wajib menggunakan NIM Anda (${AppConstants.defaultNim}).',
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.blue.shade800,
-                          ),
-                        ),
-                      ),
-                    ],
                   ),
                 ),
                 const SizedBox(height: 24),
