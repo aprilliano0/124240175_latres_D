@@ -1,4 +1,7 @@
 # Latihan Responsi Praktikum Pemrograman Mobile SI-D
+**Nama Repositori**: `124240175_latres_D`  
+**NIM**: `124240175`  
+**Kelas**: SI-D
 
 Aplikasi toko online berbasis Flutter (**Toko Awikwok**) yang mengintegrasikan REST API eksternal (DummyJSON), manajemen state reaktif menggunakan GetX, penyimpanan sesi login menggunakan SharedPreferences, serta penyimpanan keranjang belanja lokal persisten per pengguna menggunakan database NoSQL Hive.
 
@@ -7,8 +10,7 @@ Aplikasi toko online berbasis Flutter (**Toko Awikwok**) yang mengintegrasikan R
 ## 📋 Fitur Aplikasi & Pemenuhan Ketentuan Soal
 
 1. **Autentikasi & Validasi NIM (Poin 4b)**
-   - Form Login dengan input Username (bebas) dan Password (**wajib berupa NIM**).
-   - Validasi otomatis menerima NIM default (`123220000`) atau format digit NIM mahasiswa (8–15 digit angka).
+   - Form Login dengan input Username (bebas) dan Password (**wajib berupa NIM: `124240175`**).
    - Menyimpan sesi username dan status login ke SharedPreferences.
 
 2. **Session Persistence (Poin 4c)**
@@ -133,6 +135,6 @@ latres/
 
 ## 🔑 Kredensial Login
 
-- **Username**: Bebas (Contoh: `aprilliano`, `yusuf`, dsb.)
-- **Password**: **Wajib menggunakan NIM kalian** (Contoh default konfigurasi: `123220000`, atau masukkan 8–15 digit angka NIM Anda).
-- *Catatan: Untuk mengubah nilai default NIM secara statis, Anda dapat menyunting file `lib/constants/app_constants.dart`.*
+- **Username**: Bebas diinputkan pengguna (Contoh: `aprilliano`, `yusuf`, dsb.)
+- **Password**: **Wajib NIM: `124240175`**
+- *Catatan: Nilai password NIM dikonfigurasi di file `lib/constants/app_constants.dart`.*

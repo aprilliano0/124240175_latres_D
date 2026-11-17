@@ -66,15 +66,13 @@ class AuthController extends GetxController {
       return false;
     }
 
-    // Validasi Password: Password wajib NIM
-    // Menerima defaultNim yang ditentukan atau format NIM (angka minimal 8 digit)
-    final isNimValid = (trimmedPassword == AppConstants.defaultNim) ||
-        (RegExp(r'^\d{8,15}$').hasMatch(trimmedPassword));
+    // Validasi Password: Password wajib NIM (124240175)
+    final isNimValid = (trimmedPassword == AppConstants.defaultNim);
 
     if (!isNimValid) {
       Get.snackbar(
         'Login Gagal',
-        'Password wajib menggunakan NIM Anda (berupa angka, contoh: ${AppConstants.defaultNim})',
+        'Password salah! Password wajib berupa NIM (${AppConstants.defaultNim})',
         snackPosition: SnackPosition.BOTTOM,
         backgroundColor: Colors.red.shade700,
         colorText: Colors.white,

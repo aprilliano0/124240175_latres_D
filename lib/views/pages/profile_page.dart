@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../constants/app_constants.dart';
 import '../../controllers/auth_controller.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -60,10 +61,11 @@ class ProfilePage extends StatelessWidget {
             ),
             const SizedBox(height: 4),
             Text(
-              'Praktikum Pemrograman Mobile SI-D',
+              'NIM: ${AppConstants.defaultNim} | SI-D',
               style: TextStyle(
                 fontSize: 13,
-                color: Colors.grey.shade600,
+                fontWeight: FontWeight.w600,
+                color: Colors.blue.shade700,
               ),
             ),
             const SizedBox(height: 28),

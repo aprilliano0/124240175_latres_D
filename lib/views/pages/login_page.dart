@@ -134,7 +134,7 @@ class LoginPage extends StatelessWidget {
                       const SizedBox(width: 8),
                       Expanded(
                         child: Text(
-                          'Sesuai ketentuan, password wajib menggunakan NIM Anda.',
+                          'Sesuai ketentuan, password wajib menggunakan NIM Anda (${AppConstants.defaultNim}).',
                           style: TextStyle(
                             fontSize: 12,
                             color: Colors.blue.shade800,
