@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../controllers/auth_controller.dart';
 import '../../controllers/cart_controller.dart';
+import '../../controllers/navigation_controller.dart';
+import '../../routes/app_routes.dart';
 import '../widgets/cart_item_tile.dart';
 
 class CartPage extends StatefulWidget {
@@ -23,6 +25,17 @@ class _CartPageState extends State<CartPage> {
     });
   }
 
+  void _navigateToHome() {
+    if (Get.isRegistered<NavigationController>()) {
+      Get.find<NavigationController>().changePage(0);
+    }
+    if (Navigator.of(context).canPop()) {
+      Navigator.of(context).pop();
+    } else {
+      Get.offAllNamed(AppRoutes.main);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,6 +44,11 @@ class _CartPageState extends State<CartPage> {
         backgroundColor: Colors.blue.shade600,
         elevation: 0,
         foregroundColor: Colors.white,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          tooltip: 'Kembali',
+          onPressed: _navigateToHome,
+        ),
         title: const Text(
           'Keranjang Belanja',
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
@@ -65,16 +83,22 @@ class _CartPageState extends State<CartPage> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                ElevatedButton(
-                  onPressed: () => Get.back(),
+                ElevatedButton.icon(
+                  onPressed: _navigateToHome,
+                  icon: const Icon(Icons.shopping_bag_outlined),
+                  label: const Text(
+                    'Mulai Belanja',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue.shade600,
                     foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 24, vertical: 12),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  child: const Text('Mulai Belanja'),
                 ),
               ],
             ),
